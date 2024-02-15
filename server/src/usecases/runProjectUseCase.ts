@@ -6,7 +6,7 @@ class RunProjectUseCase{
         try{
             project.launchCommands.forEach(command => {
                 console.log(`Executando: ${command}`)
-                exec(command, (error, stdout, stderr) => {
+                exec(project.runnablePath + " " + command, (error, stdout, stderr) => {
                     if (error) {
                         console.error(`Erro ao iniciar ${project.name}:`, error);
                         throw `Erro ao executar o comando ${command}: Erro: ${error}`
