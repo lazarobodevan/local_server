@@ -5,16 +5,22 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "npm start"
+    "run": "npx ts-node src/server.ts"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@ngrok/ngrok": "^1.0.0",
+    "cors": "^2.8.5",
     "crypto": "^1.0.1",
     "dotenv": "^16.4.4",
     "express": "^4.18.2",
     "ngrok": "^5.0.0-beta.2",
-    "simple-git": "^3.22.0"
+    "simple-git": "^3.22.0",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "ts-node": "^10.9.2"
   }
 }

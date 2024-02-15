@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+      "target": "ES2021",            // Versão do ECMAScript a ser compilada
+      "module": "CommonJS",          // Sistema de módulos a ser usado
+      "outDir": "./dist",            // Diretório de saída dos arquivos compilados
+      "rootDir": "./src",            // Diretório de origem dos arquivos TypeScript
+      "strict": false,                // Habilitar checagem de tipos estrita
+      "esModuleInterop": true,       // Permitir importações padrão em módulos ES6
+      "skipLibCheck": true,          // Ignorar a verificação de bibliotecas de definições
+      "forceConsistentCasingInFileNames": true, // Garantir consistência nos nomes de arquivos
+      "resolveJsonModule": true,     // Permitir importações de arquivos JSON como módulos
+      "allowSyntheticDefaultImports": true,    // Permitir importações padrão de módulos que não as exportam
+      "experimentalDecorators": true, // Habilitar decorators experimentais
+      "emitDecoratorMetadata": true,  // Emitir informações de metadados para decorators
+      "strictPropertyInitialization": false // Desabilitar verificação estrita de inicialização de propriedades
+    },
+    "include": ["src/**/*.ts"],      // Incluir arquivos TypeScript na compilação
+    "exclude": ["node_modules"]      // Excluir arquivos da pasta node_modules
+}
